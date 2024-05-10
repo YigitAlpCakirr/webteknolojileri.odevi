@@ -1,5 +1,5 @@
 .logo{
-    height: 100px;
+    height: 90px;
 }
 
 .ayrac{
@@ -20,4 +20,70 @@
 .nav-item a{
     font-size: 16px;
     font-weight: bold;
+}
+
+@media screen and (max-width:992px){
+    .ayrac {
+        display: none;
+    }
+}
+
+.yazihosgeldiniz{
+    font-size: 50px;
+    margin-top: 70px;
+    font-family:"Courier New", Courier, monospace;
+    font-weight: bolder;
+    
+}
+
+.yorum{
+    font-size: 50px;
+}
+
+/* Kısaca Ben Kimim  */
+.benkimim{
+    font-size: 50px;
+}
+
+.h1{
+    font-size: 25px;
+}
+
+.btn1{
+    margin-top: 15px;
+}
+
+.m{
+    font-size: 35px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Yapmaktan Hoşlandıklarım */
+.h2{
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.yapmaktanhoslandiklarim{
+    background-color: coral;
+}
+
+.macizlemek{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.futboloynamak{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.filmizlemek{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.oyunoynamak{
+    margin-top: 20px;
+    font-size: 25px;
 }
