@@ -17,6 +17,24 @@
     background-attachment: fixed;
 }
 
+.sayfa-baslik{
+    font-size: 50px;
+    color: rgb(7, 5, 5);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.ust-kisim-sayfalar{
+    background-image: url(Resimler/blur.png.jpg);
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .nav-item a{
     font-size: 16px;
     font-weight: bold;
@@ -29,11 +47,10 @@
 }
 
 .yazihosgeldiniz{
-    font-size: 50px;
-    margin-top: 70px;
-    font-family:"Courier New", Courier, monospace;
-    font-weight: bolder;
-    
+    font-size : 50px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 .yorum{
@@ -65,7 +82,7 @@
 }
 
 .yapmaktanhoslandiklarim{
-    background-color: coral;
+    background-color: rgb(181, 171, 193);
 }
 
 .macizlemek{
@@ -86,4 +103,48 @@
 .oyunoynamak{
     margin-top: 20px;
     font-size: 25px;
+}
+
+/* Slogan */
+
+.soz{
+    font-size : 50px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.tirnak{
+    color: white;
+    font-size: 60px;
+}
+
+.slogan{
+    background-image: url(Resimler/arka1.png.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 400px;
+}
+
+/* En alt kısım */
+
+.icons{
+    font-size: 35px;
+    color: black ;
+}
+
+.enalt{
+    background-color: rgb(181, 171, 193);
+    height: 100px;
+}
+
+.logolar{
+    height: 100px;
+}
+
+/* hakkımda */ 
+
+.hakkimdayazi{
+    font-size: 24px;
 }
