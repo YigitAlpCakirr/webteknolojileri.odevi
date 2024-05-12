@@ -17,6 +17,7 @@
     background-attachment: fixed;
 }
 
+
 .sayfa-baslik{
     font-size: 50px;
     color: rgb(7, 5, 5);
@@ -64,6 +65,8 @@
 
 .h1{
     font-size: 25px;
+    font-weight: lighter;
+    color: black;
 }
 
 .btn1{
@@ -73,6 +76,7 @@
 .m{
     font-size: 35px;
     font-family: "Times New Roman", Times, serif;
+    font-weight: lighter;
 }
 
 /* Yapmaktan Hoşlandıklarım */

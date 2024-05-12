@@ -1,0 +1,15 @@
+.samsunyazi{
+    font-size: 100px;
+    font-family: "Brush Script MT", cursive;
+    font-weight: bolder;
+}
+
+.sayfaalt{
+    background-image: url(Resimler/samsun.png);
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
