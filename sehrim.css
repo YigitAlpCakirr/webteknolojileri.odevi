@@ -6,10 +6,21 @@
 
 .sayfaalt{
     background-image: url(Resimler/samsun.png);
-    height: 30vh;
+    height: 60vh;
     width: 100%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.samsunyazi1{
+    font-size: 30px;
+    font-family: "Brush Script MT", serif;
+    font-weight: lighter;
+}
+
+.hapyazi{
+    font-size: 50px;
+    font-weight: bolder;
 }
