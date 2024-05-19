@@ -1,32 +1,32 @@
-var mainimg=document.querySelector('img')
-var images=['Resimler/onuranıtı.png','Resimler/atakum.png','Resimler/bafra.png','Resimler/ayvacık.png','Resimler/bandırma.png','Resimler/çiftlikcaddesi.png','Resimler/batıpark.png','Resimler/amisos.png','Resimler/çağlayanşelalesi.png','Resimler/çakırlarkorusu.png','Resimler/gazimüzesi.png','Resimler/kuşcenneti.png','Resimler/sevgigölü.png','Resimler/şahinkayakanyon.png']
-var num=0;
-const auto=true
-const IntervalTime=5000;
-let slideInterval
+let slideIndex = 2;
+    slideShow(slideIndex);
 
-function next() {
-    num++
-    if (num>=images.length) {
-        num=0;
-        mainimg.src=images[num]
+    function slideRoute(n) {
+        slideShow(slideIndex += n);
     }
-    else{
-        mainimg.src=images[num]
-    }
-}
 
-function back() {
-    num--
-    if(num<0){
-        num=images.length-1
-        mainimg.src=images[num]
+    function currentSlide(n) {
+        slideShow(slideIndex = n);
     }
-    else{
-        mainimg.src=images[num]
-    }
-}
 
-if (auto) {
-    slideInterval=setInterval(next,IntervalTime)
-}
+    function slideShow(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display="none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+
+        dots[slideIndex-1].className +=" active";
+    }

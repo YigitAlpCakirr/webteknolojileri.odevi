@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="still.css">
     <link rel="stylesheet" href="sehrim.css">
     <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <script src="bootstrap.js"></script>
+    <script src="slider.js" defer></script>
 
 </head>
 <body>
@@ -83,18 +85,109 @@
           </h3>
           <hr>
         </div>
+        <p class="text-center" style="font-size: 50px;"><u>Gezilecek Yerler</u></p>
 
-        <div class="main">
-          <div class="slider">
-            <p style="font-size: 50px;" class="text-center"><u>Gezilecek Yerler</u></p>
-            <img src="Resimler/onuranıtı.png" alt="resim1" width="40%" class="mt-3">
-            <div class="buton">
-              <i class="fa-solid fa-arrow-left fa-2x" onclick="next()"></i>
-              <i class="fa-solid fa-arrow-right fa-2x" onclick="back()"></i>
+        <div class="slider">  
+         <div class="main-slider">
+             <div class="slide fade">
+              
+                 <div class="number">1 / 14</div>
+                 <img src="Resimler/onuranıtı.png" class="slide-image" />
+                 <div class="text">Onur Anıtı</div>
+             </div>
+         
+             <div class="slide fade">
+                 <div class="number">2 / 14</div>
+                 <img src="Resimler/atakum.png" class="slide-image" />
+                 <div class="text">Atakum</div>
+             </div>
+         
+             <div class="slide fade">
+                 <div class="number">3 / 14</div>
+                 <img src="Resimler/bafra.png" class="slide-image img-fluid" />
+                 <div class="text">Bafra</div>
+             </div>
+
+             <div class="slide fade">
+              <div class="number">4 / 14</div>
+              <img src="Resimler/ayvacık.png" class="slide-image img-fluid" />
+              <div class="text">Ayvacık</div>
             </div>
-          </div>
-        </div>
- 
+
+            <div class="slide fade">
+              <div class="number">5 / 14</div>
+              <img src="Resimler/bandırma.png" class="slide-image img-fluid" />
+              <div class="text">Bandırma Vapuru</div>
+            </div>
+
+            <div class="slide fade">
+              <div class="number">6 / 14</div>
+              <img src="Resimler/çiftlikcaddesi.png" class="slide-image img-fluid" />
+              <div class="text">Çiftlik Caddesi</div>
+            </div>
+
+            <div class="slide fade">
+              <div class="number">7 / 14</div>
+              <img src="Resimler/batıpark.png" class="slide-image img-fluid" />
+              <div class="text">Batı Park</div>
+            </div>
+
+            <div class="slide fade">
+              <div class="number">8 / 14</div>
+              <img src="Resimler/amisos.png" class="slide-image img-fluid" />
+              <div class="text">Amisos Tepesi</div>
+            </div>
+
+            <div class="slide fade">
+              <div class="number">9 / 14</div>
+              <img src="Resimler/çağlayanşelalesi.png" class="slide-image img-fluid" />
+              <div class="text">Çağlayan Şelalesi</div>
+            </div>
+
+            <div class="slide fade">
+              <div class="number">10 / 14</div>
+              <img src="Resimler/çakırlarkorusu.png" class="slide-image img-fluid" />
+              <div class="text">Çakırlar Korusu</div>
+            </div>
+
+            <div class="slide fade">
+              <div class="number">11 / 14</div>
+              <img src="Resimler/gazimüzesi.png" class="slide-image img-fluid" />
+              <div class="text">Gazi Müzesi</div>
+            </div>
+
+            <div class="slide fade">
+              <div class="number">12 / 14</div>
+              <img src="Resimler/kuşcenneti.png" class="slide-image img-fluid" />
+              <div class="text">Kuş Cenneti</div>
+            </div>
+
+            <div class="slide fade">
+              <div class="number">13 / 14</div>
+              <img src="Resimler/sevgigölü.png" class="slide-image img-fluid" />
+              <div class="text">Sevgi Gölü</div>
+            </div>
+
+            <div class="slide fade">
+              <div class="number">14 / 14</div>
+              <img src="Resimler/şahinkayakanyon.png" class="slide-image img-fluid" />
+              <div class="text">Şahinkaya Kanyonu</div>
+            </div>
+
+
+             <a class="prev" onclick="slideRoute(-1)">&#10094;</a>
+             <a class="next" onclick="slideRoute(1)">&#10095;</a>
+         </div>
+         <br/>
+         
+         <div style="text-align:center">
+             <span class="dot" onclick="currentSlide(1)"></span>
+             <span class="dot" onclick="currentSlide(2)"></span>
+             <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+         </div>
+
+
         <div class="container my-4">
           <div class="row">
             <div class="col-md-12 bg1">
@@ -317,7 +410,5 @@
               </div>
             </div>
           </div>
-          <script src="https://kit.fontawesome.com/220b6ee28d.js" crossorigin="anonymous"></script>
-          <script src="slider.js"></script>
 </body>
 </html>
